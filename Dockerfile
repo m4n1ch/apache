@@ -16,4 +16,7 @@ ADD run-httpd.sh /run-httpd.sh
 RUN sed -i -e 's/\r$//' /run-httpd.sh
 RUN chmod -v +x /run-httpd.sh
 
+RUN chmod 777 /var/www/html/temp/
+RUN chmod 777 /var/www/html/logs/
+
 CMD ["/run-httpd.sh"]
