@@ -11,7 +11,7 @@
 // For examples see http://pear.php.net/manual/en/package.database.mdb2.intro-dsn.php
 // NOTE: for SQLite use absolute path (Linux): 'sqlite:////full/path/to/sqlite.db?mode=0646'
 //       or (Windows): 'sqlite:///C:/full/path/to/sqlite.db'
-$config['db_dsnw'] = 'mysql://testdb:mysqlPassword@localhost/testdb';
+$config['db_dsnw'] = 'mysql://testdb:mysqlPassword@192.168.1.28/testdb';
 
 // ----------------------------------
 // IMAP
