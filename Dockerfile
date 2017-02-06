@@ -7,6 +7,8 @@ RUN wget "https://github.com/roundcube/roundcubemail/releases/download/1.2.3/rou
 RUN tar xf roundcubemail.tar.gz -C /var/www/html --strip-components 1
 RUN rm roundcubemail.tar.gz
 
+ADD config.inc.php /var/ww/html/config/config.php
+
 EXPOSE 80
 
 
